@@ -1,3 +1,4 @@
+// Add images to dictionary
 var dict = {};
 
 dict.image1 = "images/Tarot/majorArcana/death.jpg";
@@ -83,9 +84,11 @@ dict.image76 = "images/Tarot/suitOfWands/tenOfWands.jpg";
 dict.image77 = "images/Tarot/suitOfWands/threeOfWands.jpg";
 dict.image78 = "images/Tarot/suitOfWands/twoOfWands.jpg";
 
+// Generate random number between 1 and 78
 var randNum= Math.floor(Math.random() * 78) + 1;
 console.log(randNum);
 
+// Display random image from our dictionary
 var img = $("<img>");
 img.attr("width", "200px");
 img.attr("height", "300px");
